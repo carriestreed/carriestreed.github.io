@@ -49,7 +49,10 @@ const styles = {
     backgroundSize: 'cover',
     width: '110px',
     height: '70px',
-    margin: '30px',
+    margin: '30px 0 0 0',
+    '@media (max-width: 775px)': {
+            margin: '10px',
+    },
   },
   nav: {
     color: '#acacac',
