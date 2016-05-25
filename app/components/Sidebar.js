@@ -20,7 +20,7 @@ export default class Sidebar extends Component{
           </div>
 
           <div style={styles.nav}>
-            <li key='5' style={styles.hover}>send an email</li>
+            <li key='5' style={styles.connect}>{`let's connect!`}</li>
           </div>
 
       </StyleRoot>
@@ -66,6 +66,14 @@ const styles = {
   hover: {
     ':hover': {
      color: '#333',
+     cursor: 'crosshair',
+    },
+  },
+  connect: {
+    color: '#ac1a5d',
+    fontWeight: 'bolder',
+    ':hover': {
+     color: '#ff0078',
      cursor: 'crosshair',
     },
   }
