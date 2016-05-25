@@ -22,7 +22,6 @@ const styles = {
   main: {
     width: '100%',
     backgroundColor: 'blue',
-    border: '2px solid yellow',
     color: 'white',
     '@media (max-width: 320px)': {
         color: 'pink'

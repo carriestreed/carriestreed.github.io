@@ -25,5 +25,8 @@ const styles = {
     left: 0,
     padding: 0,
     margin: 0,
+    '@media (max-width: 775px)': {
+            display: 'block',
+    },
   },
 }

@@ -6,26 +6,22 @@ import Radium, {StyleRoot} from 'radium';
 @Radium
 export default class Sidebar extends Component{
   render(){
+
     return (
       <StyleRoot style={styles.main}>
 
+          <div style={styles.logo} />
 
-          <div style={styles.logo}>
-            <h1>Hello</h1>
+          <div style={styles.nav}>
+            <li key='1' style={styles.hover}>About</li>
+            <li key='2' style={styles.hover}>Skills</li>
+            <li key='3' style={styles.hover}>Portfolio</li>
+            <li key='4' style={styles.hover}>Contact</li>
           </div>
 
           <div style={styles.nav}>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+            <li key='5' style={styles.hover}>send an email</li>
           </div>
-
-          <div style={styles.nav}>
-            <li>send an email</li>
-          </div>
-
-
 
       </StyleRoot>
     );
@@ -35,13 +31,25 @@ export default class Sidebar extends Component{
 const styles = {
   main: {
     color: '#333',
-    minWidth: '160px',
+    minWidth: '140px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
+    '@media (max-width: 775px)': {
+            flexDirection: 'row',
+            alignItems: 'center',
+            width: 'auto',
+    },
   },
   logo: {
-    backgroundColor: '#ccc',
+    alignSelf: 'center',
+    backgroundColor: '#fff',
+    backgroundImage: 'url(../dist/images/cs-logo.svg)',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    width: '110px',
+    height: '70px',
+    margin: '30px',
   },
   nav: {
     color: '#acacac',
@@ -50,6 +58,15 @@ const styles = {
     fontSize: 14,
     lineHeight: 2,
     textAlign: 'right',
-    marginRight: 10,
+    marginRight: 20,
+    '@media (max-width: 775px)': {
+            display: 'none',
+    }
+  },
+  hover: {
+    ':hover': {
+     color: '#333',
+     cursor: 'crosshair',
+    },
   }
 }
