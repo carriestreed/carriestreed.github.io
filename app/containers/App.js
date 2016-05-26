@@ -1,14 +1,16 @@
+'use strict'
+
 import React, { Component } from 'react';
 import Radium, {StyleRoot} from 'radium';
-import Sidebar from '../components/Sidebar';
-import MainComponent from '../components/MainComponent';
+import Navbar from './Navbar';
+import MainComponent from './MainComponent';
 
 @Radium
 export default class App extends Component {
   render(){
     return (
       <StyleRoot style={styles.main}>
-        <Sidebar />
+        <Navbar />
         <MainComponent />
       </StyleRoot>
     );

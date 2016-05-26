@@ -4,26 +4,26 @@ import React, { Component } from 'react';
 import Radium, {StyleRoot} from 'radium';
 
 @Radium
-export default class Sidebar extends Component{
+export default class Navbar extends Component{
   render(){
 
     return (
       <StyleRoot style={styles.main}>
 
-        <div style={styles.sidebar}>
+        <div style={styles.navbar}>
 
           <div style={styles.logo}>
           </div>
 
           <div style={styles.nav}>
-            <li key='1' style={styles.hover}>About</li>
-            <li key='2' style={styles.hover}>Skills</li>
-            <li key='3' style={styles.hover}>Portfolio</li>
-            <li key='4' style={styles.hover}>Contact</li>
+            <a href='#' style={styles.hover} key='1'><li>{`About`}</li></a>
+            <a href='#' style={styles.hover} key='2'><li>{`Skills`}</li></a>
+            <a href='#' style={styles.hover} key='3'><li>{`Portfolio`}</li></a>
+            <a href='#' style={styles.hover} key='4'><li>{`Contact`}</li></a>
           </div>
 
           <div style={styles.nav}>
-            <li key='5' style={styles.connect}>{`Let's Connect!`}</li>
+            <a href='#' style={styles.connect} key='5'><li>{`Let's Connect!`}</li></a>
           </div>
 
         </div>
@@ -40,7 +40,7 @@ const styles = {
             minHeight: '80px',
     },
   },
-  sidebar: {
+  navbar: {
     width: '140px',
     display: 'flex',
     flexDirection: 'column',
@@ -60,7 +60,6 @@ const styles = {
   },
   logo: {
     alignSelf: 'center',
-    backgroundColor: '#fff',
     backgroundImage: 'url(../dist/images/cs-logo.svg)',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
@@ -74,7 +73,6 @@ const styles = {
     },
   },
   nav: {
-    color: '#acacac',
     listStyle: 'none',
     fontFamily: 'Open Sans Condensed',
     fontSize: 14,
@@ -83,20 +81,21 @@ const styles = {
     marginRight: 20,
     '@media (max-width: 775px)': {
             display: 'none',
-    }
+    },
   },
   hover: {
+    textDecoration: 'none',
+    color: '#acacac',
     ':hover': {
      color: '#333',
-     cursor: 'crosshair',
     },
   },
   connect: {
+    textDecoration: 'none',
     color: '#ac1a5d',
     fontWeight: 'bolder',
     ':hover': {
      color: '#ff0078',
-     cursor: 'crosshair',
     },
   }
 }
