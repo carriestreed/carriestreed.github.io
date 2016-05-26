@@ -9,7 +9,7 @@ export default class MainComponent extends Component{
     return (
       <StyleRoot style={styles.main}>
 
-        <div style={styles.flex}>
+        <div>
           <h1>{`Lorem ipsum dolor sit amet, vel vestibulum tempus enim iure sapien elementum, ipsum ipsum vel vehicula accumsan, morbi vestibulum fermentum. Morbi libero elit, viverra felis nam congue nisl lacus at. Wisi neque nullam ullamcorper wisi laoreet aliquet, justo sed, duis orci lacus suscipit amet. Elit viverra mauris arcu vestibulum auctor, a eu pellentesque parturient tellus ipsam. Fusce quis sollicitudin nulla nullam, odio erat urna fusce libero, phasellus orci sollicitudin, cras mattis pede eget. Molestie vel, laoreet sodales nullam parturient ut blandit, a porttitor duis, id id quam commodo tellus massa sollicitudin.
 
 Ullamcorper turpis ac donec, nunc mi ac. Cras litora, magna vitae quis, nec risus sed odio risus libero sed, vel lacinia ut blanditiis in vel ac, repudiandae conubia. Dapibus placerat suscipit sapien quis pellentesque vel, lacus turpis mauris. Nulla nunc ipsum magnis tellus nonummy morbi, aenean turpis neque nunc vestibulum non vestibulum, scelerisque adipiscing diam sed amet montes etiam. Euismod purus lectus ut. Enim volutpat ante etiam ut pede, justo wisi. Varius a quisque at tempore tristique integer, sapien ante, nullam tortor dui scelerisque. Nonummy at varius vel id vel nisl, sit duis nulla vitae vestibulum, porta vivamus feugiat aliquam velit, ut malesuada facilisi suspendisse, ante curabitur explicabo rutrum porta quisque.
@@ -29,12 +29,12 @@ const styles = {
     width: '100%',
     backgroundColor: 'blue',
     color: 'black',
-    '@media (max-width: 320px)': {
-        color: 'pink'
+    '@media (max-width: 775px)': {
+        color: 'white',
+        backgroundColor: 'pink',
       }
   },
   flex: {
-    display: 'flex',
     flexDirection: 'column',
   },
 }

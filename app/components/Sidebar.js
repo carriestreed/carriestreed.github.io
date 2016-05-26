@@ -10,7 +10,10 @@ export default class Sidebar extends Component{
     return (
       <StyleRoot style={styles.main}>
 
-          <div style={styles.logo} />
+        <div style={styles.sidebar}>
+
+          <div style={styles.logo}>
+          </div>
 
           <div style={styles.nav}>
             <li key='1' style={styles.hover}>About</li>
@@ -20,8 +23,10 @@ export default class Sidebar extends Component{
           </div>
 
           <div style={styles.nav}>
-            <li key='5' style={styles.connect}>{`let's connect!`}</li>
+            <li key='5' style={styles.connect}>{`Let's Connect!`}</li>
           </div>
+
+        </div>
 
       </StyleRoot>
     );
@@ -30,15 +35,27 @@ export default class Sidebar extends Component{
 
 const styles = {
   main: {
-    color: '#333',
     minWidth: '140px',
+    '@media (max-width: 775px)': {
+            minHeight: '80px',
+    },
+  },
+  sidebar: {
+    width: '140px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
+    position: 'fixed',
+    top: 0,
+    bottom: 0,
+    left: 0,
     '@media (max-width: 775px)': {
+            backgroundColor: '#fff',
             flexDirection: 'row',
-            alignItems: 'center',
-            width: 'auto',
+            width: '100%',
+            display: 'fixed',
+            bottom: 'auto',
+            height: '80px',
     },
   },
   logo: {
@@ -52,6 +69,8 @@ const styles = {
     margin: '30px 0 0 0',
     '@media (max-width: 775px)': {
             margin: '10px',
+            width: '100px',
+            height: '62px',
     },
   },
   nav: {
