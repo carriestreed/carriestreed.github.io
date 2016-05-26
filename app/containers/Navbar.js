@@ -16,10 +16,10 @@ export default class Navbar extends Component{
           </div>
 
           <div style={styles.nav}>
-            <a href='#' style={styles.hover} key='1'><li>{`About`}</li></a>
-            <a href='#' style={styles.hover} key='2'><li>{`Skills`}</li></a>
-            <a href='#' style={styles.hover} key='3'><li>{`Portfolio`}</li></a>
-            <a href='#' style={styles.hover} key='4'><li>{`Contact`}</li></a>
+            <a href='#about' style={styles.hover} key='1'><li>{`About`}</li></a>
+            <a href='#skills' style={styles.hover} key='2'><li>{`Skills`}</li></a>
+            <a href='#portfolio' style={styles.hover} key='3'><li>{`Portfolio`}</li></a>
+            <a href='#contact' style={styles.hover} key='4'><li>{`Contact`}</li></a>
           </div>
 
           <div style={styles.nav}>

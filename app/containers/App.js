@@ -11,7 +11,7 @@ export default class App extends Component {
     return (
       <StyleRoot style={styles.main}>
         <Navbar />
-        <MainComponent />
+        <MainComponent style={styles.flex} />
       </StyleRoot>
     );
   }
@@ -19,6 +19,7 @@ export default class App extends Component {
 
 const styles = {
   main: {
+    width: '100%',
     display: 'flex',
     position: 'absolute',
     top: 0,
@@ -26,5 +27,5 @@ const styles = {
     '@media (max-width: 775px)': {
             flexDirection: 'column',
     },
-  }
+  },
 }

@@ -13,10 +13,10 @@ export default class MainComponent extends Component{
     return (
       <StyleRoot style={styles.main}>
 
-        <About />
-        <Skills />
-        <Portfolio />
-        <Contact />
+          <a name='about'><About /></a>
+          <a name='skills'><Skills /></a>
+          <a name='portfolio'><Portfolio /></a>
+          <a name='contact'><Contact /></a>
 
       </StyleRoot>
     );
@@ -25,7 +25,6 @@ export default class MainComponent extends Component{
 
 const styles = {
   main: {
-    display: 'flex',
-    flexDirection: 'column',
+    flex: '1',
   },
 }
