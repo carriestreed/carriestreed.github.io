@@ -10,8 +10,8 @@ export default class Title extends Component{
       <StyleRoot style={styles.main}>
 
         <div style={styles.name}>
-            <span style={styles.carrie}>{`CARRIE`}</span>
-            <span style={styles.streed}>{`STREED`}</span>
+            <div style={styles.carrie}>{`CARRIE`}</div>
+            <div style={styles.streed}>{`STREED`}</div>
         </div>
         <div style={styles.title}>
           <p>{`web developer`}</p>
@@ -37,11 +37,13 @@ const styles = {
     fontFamily: 'Fjalla One',
   },
   name: {
-    fontSize: '50px',
+    fontSize: '80px',
+    marginBottom: '10px',
+    lineHeight: '80px',
     letterSpacing: '-3px',
     textShadow: '0 0 10px #fff',
-    '@media (min-width: 768px)': {
-            fontSize: '80px',
+    '@media (min-width: 425px)': {
+            display: 'flex'
     },
   },
   carrie: {
