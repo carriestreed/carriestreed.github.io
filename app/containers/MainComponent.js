@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import Radium, {StyleRoot} from 'radium';
+import Title from '../components/Title';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import Portfolio from '../components/Portfolio';
@@ -13,6 +14,7 @@ export default class MainComponent extends Component{
     return (
       <StyleRoot style={styles.main}>
 
+          <a name='title'><Title /></a>
           <a name='about'><About /></a>
           <a name='skills'><Skills /></a>
           <a name='portfolio'><Portfolio /></a>

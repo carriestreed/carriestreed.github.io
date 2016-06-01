@@ -9,12 +9,14 @@ export default class About extends Component{
     return (
       <StyleRoot style={styles.main}>
 
-        <div style={styles.name}>
-            <span style={styles.carrie}>{`CARRIE`}</span>
-            <span style={styles.streed}>{`STREED`}</span>
-        </div>
-        <div style={styles.title}>
-          <p>{`web developer`}</p>
+        <div style={styles.aboutMe}>
+          As a <span style={styles.brightPink}> web developer </span> with a talent
+          for <span style={styles.darkPink}> design </span> and a background in
+          digital <span style={styles.darkPink}> marketing </span>, I am
+          <span style={styles.brightPink}> motivated </span>
+          by the <span style={styles.darkPink}> challenge </span> of creating
+          <span style={styles.darkPink}> beautiful </span> products that users
+          <span style={styles.darkPink}> love </span> and depend on.
         </div>
 
       </StyleRoot>
@@ -24,33 +26,38 @@ export default class About extends Component{
 
 const styles = {
   main: {
-    width: '100%',
-    height: '400px',
-    backgroundColor: 'hotpink',
-    backgroundImage: 'url(../dist/images/bgnoise1.jpg)',
-    backgroundSize: 'cover',
-    color: 'black',
     display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
     alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%',
+    height: '600px',
+    backgroundColor: 'darkPink',
+    backgroundImage: 'url(../dist/images/about.jpg)',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    color: 'black',
     fontFamily: 'Fjalla One',
+    fontSize: '30px',
+    '@media (min-width: 768px)': {
+            height: '600px',
+    },
   },
-  name: {
-    fontSize: '80px',
-    letterSpacing: '-3px',
-    textShadow: '0 0 10px #fff',
+  aboutMe: {
+    border: '2px solid red',
+    width: '398px',
+    height: '220px',
+    paddingRight: '220px',
+    textShadow: '0 0 1px #fff',
+    '@media (min-width: 768px)': {
+            width: '398px',
+            height: '220px',
+            paddingRight: '220px',
+    },
   },
-  carrie: {
-    color: '#ac1a5d',
+  brightPink: {
+    color: '#ff0078',
   },
-  streed: {
-    color: 'rgba(0,0,0,.8)',
-  },
-  title: {
-    color: '#fff',
-    textShadow: '0 0 3px #000',
-    fontSize: '25px',
-    marginTop: '-35px',
+  darkPink: {
+    color: '#a4004d',
   }
 }

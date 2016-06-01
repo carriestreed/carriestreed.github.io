@@ -21,11 +21,12 @@ const styles = {
   main: {
     width: '100%',
     display: 'flex',
+    flexDirection: 'column',
     position: 'absolute',
     top: 0,
     left: 0,
-    '@media (max-width: 775px)': {
-            flexDirection: 'column',
+    '@media (min-width: 768px)': {
+            flexDirection: 'row',
     },
   },
 }

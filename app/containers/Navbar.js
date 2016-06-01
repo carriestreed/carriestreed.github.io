@@ -35,27 +35,26 @@ export default class Navbar extends Component{
 
 const styles = {
   main: {
-    minWidth: '140px',
-    '@media (max-width: 775px)': {
-            minHeight: '80px',
+    minHeight: '80px',
+    '@media (min-width: 768px)': {
+            minWidth: '140px',
     },
   },
   navbar: {
-    width: '140px',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
     position: 'fixed',
-    top: 0,
-    bottom: 0,
-    left: 0,
-    '@media (max-width: 775px)': {
-            backgroundColor: '#fff',
-            flexDirection: 'row',
-            width: '100%',
-            display: 'fixed',
-            bottom: 'auto',
-            height: '80px',
+    backgroundColor: '#fff',
+    width: '100%',
+    height: '80px',
+    bottom: 'auto',
+    '@media (min-width: 768px)': {
+            width: '140px',
+            height: 'auto',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            top: 0,
+            bottom: 0,
+            left: 0,
     },
   },
   logo: {
@@ -63,24 +62,26 @@ const styles = {
     backgroundImage: 'url(../dist/images/cs-logo.svg)',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
-    width: '110px',
-    height: '70px',
-    margin: '30px 0 0 0',
-    '@media (max-width: 775px)': {
-            margin: '10px',
-            width: '100px',
-            height: '62px',
+    margin: '10px',
+    width: '100px',
+    height: '62px',
+    '@media (min-width: 768px)': {
+            margin: '30px 10px 0px 10px',
+            width: '110px',
+            height: '70px',
+
     },
   },
   nav: {
+    display: 'none',
     listStyle: 'none',
     fontFamily: 'Open Sans Condensed',
     fontSize: 14,
     lineHeight: 2,
     textAlign: 'right',
     marginRight: 20,
-    '@media (max-width: 775px)': {
-            display: 'none',
+    '@media (min-width: 768px)': {
+            display: 'block',
     },
   },
   hover: {
