@@ -24,7 +24,7 @@ export default class Navbar extends Component{
           </div>
 
           <div style={styles.nav}>
-            <a href='#' style={styles.connect} key='5'><li>{`Get in Touch!`}</li></a>
+            <a href='mailto:hello@carriestreed.com' style={styles.connect} key='5'><li>{`Get in Touch!`}</li></a>
           </div>
 
         </div>
