@@ -23,6 +23,8 @@ const styles = {
     width: '100%',
     height: '400px',
     backgroundColor: 'paleVioletRed',
+    backgroundImage: 'url(../dist/images/bgnoise3.jpg)',
+    backgroundSize: 'cover',
     color: 'black',
   },
 }

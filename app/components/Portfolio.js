@@ -22,7 +22,7 @@ const styles = {
   main: {
     width: '100%',
     height: '400px',
-    backgroundColor: 'mediumVioletRed',
+    backgroundColor: '#ebebeb',
     color: 'black',
   },
 }

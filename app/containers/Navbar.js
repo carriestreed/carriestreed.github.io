@@ -12,8 +12,9 @@ export default class Navbar extends Component{
 
         <div style={styles.navbar}>
 
-          <div style={styles.logo}>
-          </div>
+          <a href='#'>
+            <div style={styles.logo}></div>
+          </a>
 
           <div style={styles.nav}>
             <a href='#about' style={styles.hover} key='1'><li>{`About`}</li></a>
@@ -23,7 +24,7 @@ export default class Navbar extends Component{
           </div>
 
           <div style={styles.nav}>
-            <a href='#' style={styles.connect} key='5'><li>{`Let's Connect!`}</li></a>
+            <a href='#' style={styles.connect} key='5'><li>{`Get in Touch!`}</li></a>
           </div>
 
         </div>
@@ -65,21 +66,21 @@ const styles = {
     margin: '10px',
     width: '100px',
     height: '62px',
+    cursor: 'crosshair',
     '@media (min-width: 768px)': {
             margin: '30px 10px 0px 10px',
             width: '110px',
             height: '70px',
-
     },
   },
   nav: {
     display: 'none',
     listStyle: 'none',
     fontFamily: 'Open Sans Condensed',
-    fontSize: 14,
+    fontSize: '14px',
     lineHeight: 2,
     textAlign: 'right',
-    marginRight: 20,
+    marginRight: '20px',
     '@media (min-width: 768px)': {
             display: 'block',
     },
@@ -89,6 +90,7 @@ const styles = {
     color: '#acacac',
     ':hover': {
      color: '#333',
+     cursor: 'crosshair',
     },
   },
   connect: {
@@ -97,6 +99,7 @@ const styles = {
     fontWeight: 'bolder',
     ':hover': {
      color: '#ff0078',
+     cursor: 'crosshair',
     },
   }
 }
