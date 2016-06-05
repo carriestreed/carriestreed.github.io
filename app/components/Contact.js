@@ -37,6 +37,7 @@ const styles = {
     fontFamily: 'Fjalla One',
     fontSize: '30px',
     textDecoration: 'none',
+    cursor: 'crosshair',
     textShadow: '0 0 5px #000',
     '@media (min-width: 400px)': {
       fontSize: '40px',
