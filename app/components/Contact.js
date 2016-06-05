@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import Radium, {StyleRoot} from 'radium';
+import {Link} from 'react-router';
 
 @Radium
 export default class Contact extends Component{
@@ -10,7 +11,9 @@ export default class Contact extends Component{
       <StyleRoot style={styles.main}>
 
         <div>
-            {'CONTACT'}
+          <a href='mailto:hello@carriestreed.com' style={styles.email}>
+            hello<span style={styles.pink}>@</span>carriestreed.com
+          </a>
         </div>
 
       </StyleRoot>
@@ -25,6 +28,27 @@ const styles = {
     backgroundColor: 'paleVioletRed',
     backgroundImage: 'url(../dist/images/bgnoise3.jpg)',
     backgroundSize: 'cover',
-    color: 'black',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  email: {
+    color: '#fff',
+    fontFamily: 'Fjalla One',
+    fontSize: '30px',
+    textDecoration: 'none',
+    textShadow: '0 0 5px #000',
+    '@media (min-width: 400px)': {
+      fontSize: '40px',
+    },
+    '@media (min-width: 600px)': {
+      fontSize: '60px',
+    },
+    '@media (min-width: 1050px)': {
+      fontSize: '80px',
+    },
+  },
+  pink: {
+    color: '#ff0078',
   },
 }
