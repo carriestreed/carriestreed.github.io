@@ -37,13 +37,14 @@ export default class Navbar extends Component{
 const styles = {
   main: {
     minHeight: '80px',
+    zIndex: '1',
     '@media (min-width: 768px)': {
             minWidth: '140px',
     },
   },
   navbar: {
     position: 'fixed',
-    backgroundColor: '#fff',
+    backgroundColor: 'rgba(255, 255, 255, 0.98)',
     width: '100%',
     height: '80px',
     bottom: 'auto',
