@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "0.1.0"
+  },
   "scripts": {
     "production": "webpack -p",
     "start-dev": "webpack-dev-server --progress --inline --hot",
