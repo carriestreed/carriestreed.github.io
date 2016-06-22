@@ -5,12 +5,12 @@
   "main": "index.js",
   "engines": {
     "node": "6.0.0",
-    "npm": "3.8.x"
+    "npm": "3.8.6"
   },
   "scripts": {
     "production": "webpack -p",
     "start-dev": "webpack-dev-server --progress --inline --hot",
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "author": "Carrie Streed",
   "license": "ISC",
