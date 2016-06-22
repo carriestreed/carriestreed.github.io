@@ -10,7 +10,7 @@
   "scripts": {
     "production": "webpack -p",
     "start-dev": "webpack-dev-server --progress --inline --hot",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "author": "Carrie Streed",
   "license": "ISC",
